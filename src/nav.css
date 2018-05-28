@@ -1,0 +1,44 @@
+.nav {
+	font-size: large;
+	font-weight: lighter;
+	display: flex;
+}
+
+.nav__list {
+	list-style: none;
+	padding: 0;
+	margin: 0 1em;
+	flex: 3;
+	display: flex;
+}
+
+.nav__list-item {
+	flex: 1;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: var(--font-size-1);
+}
+
+.nav__list-item-link {
+	color: var(--brand-primary);
+	transition: opacity 0.2s ease;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav__list-item-link:hover {
+	text-decoration: none;
+	color: var(--gold-darker);
+	/*transform: scale(0.95);*/
+	opacity: 0.8;
+}
+
+.nav__list.nav__list--social {
+	flex: 1;
+	margin-right: 0;
+}
+
+.nav__list.nav__list--social > .nav__list-item {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}

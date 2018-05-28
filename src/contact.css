@@ -1,0 +1,44 @@
+.contact {
+
+}
+
+.contact__container {
+	max-width: 768px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact__card {
+	background-color: white;
+	/*padding: 1em;*/
+}
+
+.contact__details {
+	padding: 2em;
+	text-align: left;
+}
+
+.contact__details-label {
+	font-weight: bold;
+}
+
+.contact__details-value {
+	margin: 0;
+}
+
+.contact__row {
+	display: flex;
+}
+
+.contact__map, .contact__details {
+	flex: 1;
+}
+
+.contact__map {
+
+}
+
+.leaflet-container {
+	height: 20em;
+	overflow: hidden;
+}

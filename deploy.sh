@@ -1,7 +1,7 @@
 #!/bin/bash
 
 npm run build
-echo -n "ajcarpenter.com" >> ./build/CNAME
+echo -n "arcadianlabs.com" >> ./build/CNAME
 git add build
 git commit -m "Build"
 git push origin master

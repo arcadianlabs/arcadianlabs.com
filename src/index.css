@@ -1,5 +1,69 @@
+:root {
+	--dark-blue: #2d2e3f;
+	--dark-blue-darker: #262735;
+	--dark-blue-ligher: #333448;
+	--gold: #d59a3d;
+	--gold-darker: #bf8529;
+	--gold-lighter: #dcab5e;
+	--off-white: #f7f0f5;
+	--off-white-darker: #e7e7e7;
+	--beige: #decbb7;
+	--grey: #8f857d;
+
+	--brand-primary: var(--gold);
+	--brand-secondary: var(--dark-blue);
+
+	/* Minor Third */
+	--font-size-0: 15px;
+	--font-size-1: calc(var(--font-size-0) * 1.2);
+	--font-size-2: calc(var(--font-size-1) * 1.2);
+	--font-size-3: calc(var(--font-size-2) * 1.2);
+	--font-size-4: calc(var(--font-size-3) * 1.2);
+	--font-size-5: calc(var(--font-size-4) * 1.2);
+	--font-size-6: calc(var(--font-size-5) * 1.2);
+	--font-size-neg1: calc(var(--font-size-0) / 1.2);
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: var(--off-white);
+  color: var(--dark-blue);
+  text-align: center;
+  line-height: 1.45;
+  font-weight: lighter;
 }
+
+a {
+	color: var(--dark-blue);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+html {font-size: var(--font-size-0);}
+
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--font-size-4);
+}
+
+h2 {font-size: var(--font-size-3)}
+
+h3 {font-size: var(--font-size-2);}
+
+h4 {font-size: var(--font-size-1);}
+
+small {font-size: var(--font-size-neg1); }

@@ -1,18 +1,29 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+
+import "./app.css";
+
+import Contact from "./contact";
+import Footer from "./footer";
+import Header from "./header";
+import Hero from "./hero";
+import Team from "./team";
+import Work from "./work";
+
+import workData from "./data/work";
+import teamData from "./data/team";
+
+import heroImage from "./images/hero-illustration-1.jpg";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="app">
+        <Header />
+        <Hero image={heroImage} />
+        <Work items={workData} />
+        <Team items={teamData} />
+        <Contact lat={50.8282721} lng={-0.1285494} />
+        <Footer />
       </div>
     );
   }
