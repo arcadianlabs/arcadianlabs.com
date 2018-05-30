@@ -1,5 +1,6 @@
 .contact {
-
+	margin: 1em 0 0 0;
+	padding: 1em 0 0 0;
 }
 
 .contact__container {
@@ -10,7 +11,7 @@
 
 .contact__card {
 	background-color: white;
-	/*padding: 1em;*/
+	margin-top: 1.5em;
 }
 
 .contact__details {
