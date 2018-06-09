@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./app.css";
+import "./app.scss";
 
 import Contact from "./contact";
 import Footer from "./footer";

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './hero.css';
+import './hero.scss';
 
 export default ({ image }) => (
 	<section className="hero" style={{ backgroundImage: `url(${image})` }}>

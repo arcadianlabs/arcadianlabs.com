@@ -1,3 +1,5 @@
+@import "./mixins/index.scss";
+
 .contact {
 	margin: 1em 0 0 0;
 	padding: 1em 0 0 0;
@@ -16,7 +18,11 @@
 
 .contact__details {
 	padding: 2em;
-	text-align: left;
+	
+
+	@include tablet {
+		text-align: left;
+	}
 }
 
 .contact__details-label {
@@ -29,10 +35,20 @@
 
 .contact__row {
 	display: flex;
+	flex-wrap: wrap;
+
+	@include tablet {
+		flex-wrap: nowrap;
+	}
 }
 
 .contact__map, .contact__details {
 	flex: 1;
+	min-width: 100%;
+
+	@include tablet {
+		min-width: auto;
+	}
 }
 
 .contact__map {

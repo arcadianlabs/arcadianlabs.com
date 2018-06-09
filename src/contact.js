@@ -1,7 +1,7 @@
 import React from "react";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 
-import "./contact.css";
+import "./contact.scss";
 
 export default ({ zoom = 13, lat = 0, lng = 0 }) => {
 	const position = [lat, lng];

@@ -6,7 +6,7 @@ import faTwitter from "@fortawesome/fontawesome-free-brands/faTwitter";
 import faGithub from "@fortawesome/fontawesome-free-brands/faGithub";
 import faLinkedin from "@fortawesome/fontawesome-free-brands/faLinkedin";
 
-import "./nav.css";
+import "./nav.scss";
 
 export default () => (
 	<nav className="nav">

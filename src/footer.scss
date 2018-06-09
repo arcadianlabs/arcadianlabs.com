@@ -1,6 +1,13 @@
+@import "./mixins/index.scss";
+
+
 .footer {
 	background-color: var(--dark-blue);
-	padding: 3em 0;
+	padding: 1.5em 0;
+
+	@include tablet {
+		padding: 3em 0;
+	}
 }
 
 .footer__container {
@@ -12,12 +19,25 @@
 .footer__content {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 0 1em;
+
+	@include tablet {
+		justify-content: space-between;
+	}
 }
 
 .footer__brand {
+	min-width: 100px;
 	max-width: 200px;
 	flex: 1;
+
+	margin: 0 0 0.5em 0;
+	
+	@include tablet {
+		margin: 0;
+	}
 }
 
 

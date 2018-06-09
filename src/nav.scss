@@ -1,3 +1,5 @@
+@import "./mixins/index.scss";
+
 .nav {
 	font-size: large;
 	font-weight: lighter;
@@ -7,16 +9,23 @@
 .nav__list {
 	list-style: none;
 	padding: 0;
-	margin: 0 1em;
+	margin: 0 0.25em;
 	flex: 3;
 	display: flex;
+
+	@include tablet {
+		margin: 0 1em;
+	}
 }
 
 .nav__list-item {
 	flex: 1;
-	margin-left: 1em;
-	margin-right: 1em;
+	margin: 0 0.25em;
 	font-size: var(--font-size-1);
+
+	@include tablet {
+		margin: 0 1em;
+	}
 }
 
 .nav__list-item-link {

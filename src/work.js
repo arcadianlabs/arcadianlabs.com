@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./work.css";
+import "./work.scss";
 
 export default ({ items = [] }) => (
 	<section className="work" id="work">

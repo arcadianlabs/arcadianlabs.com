@@ -3,7 +3,7 @@ import React from 'react';
 import Logo from './logo';
 import Nav from './nav';
 
-import './footer.css';
+import './footer.scss';
 
 export default () => (
 	<footer className="footer">

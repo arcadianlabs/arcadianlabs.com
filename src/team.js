@@ -4,7 +4,7 @@ import FontAwesomeIcon from "@fortawesome/react-fontawesome";
 import faFacebook from "@fortawesome/fontawesome-free-brands/faFacebook";
 import faLinkedin from "@fortawesome/fontawesome-free-brands/faLinkedin";
 
-import "./team.css";
+import "./team.scss";
 
 const SUPPORTED_SOCIAL = {
 	facebook: <FontAwesomeIcon icon={faFacebook} />,
@@ -13,7 +13,7 @@ const SUPPORTED_SOCIAL = {
 
 export default ({ items }) => (
 	<section className="team" id="team">
-		<div className="work__container">
+		<div className="team__container">
 			<h2 className="team__title">Team</h2>
 			<ul className="team__items">
 				{items.map(({ name, image, role, social }) => (

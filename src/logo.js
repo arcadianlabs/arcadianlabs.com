@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./logo.css";
+import "./logo.scss";
 import LogoGoldSVG from "./images/logo-gold.svg";
 import LogoWhiteSVG from "./images/logo-white.svg";
 
