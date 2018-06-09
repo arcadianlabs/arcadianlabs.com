@@ -1,1 +1,719 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,500" rel="stylesheet"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/><script type="text/javascript">!function(e,p){if(!p.__SV){var o,r,t=window;try{var n,i,a,c=t.location,l=c.hash;n=function(e,t){return(i=e.match(RegExp(t+"=([^&]*)")))?i[1]:null},l&&n(l,"state")&&("mpeditor"===(a=JSON.parse(decodeURIComponent(n(l,"state")))).action&&(t.sessionStorage.setItem("_mpcehash",l),history.replaceState(a.desiredHash||"",e.title,c.pathname+c.search)))}catch(e){}(window.mixpanel=p)._i=[],p.init=function(e,t,n){function i(e,t){var n=t.split(".");2==n.length&&(e=e[n[0]],t=n[1]),e[t]=function(){e.push([t].concat(Array.prototype.slice.call(arguments,0)))}}var a=p;for(void 0!==n?a=p[n]=[]:n="mixpanel",a.people=a.people||[],a.toString=function(e){var t="mixpanel";return"mixpanel"!==n&&(t+="."+n),e||(t+=" (stub)"),t},a.people.toString=function(){return a.toString(1)+".people (stub)"},o="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" "),r=0;r<o.length;r++)i(a,o[r]);p._i.push([e,t,n])},p.__SV=1.2,(t=e.createElement("script")).type="text/javascript",t.async=!0,t.src="undefined"!=typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",(n=e.getElementsByTagName("script")[0]).parentNode.insertBefore(t,n)}}(document,window.mixpanel||[]),mixpanel.init("a8b1627edd31155c355fb98e8096886a")</script><title>Arcadian Labs</title></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/static/js/main.bafd9394.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible; }
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em; }
+  .svg-inline--fa.fa-lg {
+    vertical-align: -.225em; }
+  .svg-inline--fa.fa-w-1 {
+    width: 0.0625em; }
+  .svg-inline--fa.fa-w-2 {
+    width: 0.125em; }
+  .svg-inline--fa.fa-w-3 {
+    width: 0.1875em; }
+  .svg-inline--fa.fa-w-4 {
+    width: 0.25em; }
+  .svg-inline--fa.fa-w-5 {
+    width: 0.3125em; }
+  .svg-inline--fa.fa-w-6 {
+    width: 0.375em; }
+  .svg-inline--fa.fa-w-7 {
+    width: 0.4375em; }
+  .svg-inline--fa.fa-w-8 {
+    width: 0.5em; }
+  .svg-inline--fa.fa-w-9 {
+    width: 0.5625em; }
+  .svg-inline--fa.fa-w-10 {
+    width: 0.625em; }
+  .svg-inline--fa.fa-w-11 {
+    width: 0.6875em; }
+  .svg-inline--fa.fa-w-12 {
+    width: 0.75em; }
+  .svg-inline--fa.fa-w-13 {
+    width: 0.8125em; }
+  .svg-inline--fa.fa-w-14 {
+    width: 0.875em; }
+  .svg-inline--fa.fa-w-15 {
+    width: 0.9375em; }
+  .svg-inline--fa.fa-w-16 {
+    width: 1em; }
+  .svg-inline--fa.fa-w-17 {
+    width: 1.0625em; }
+  .svg-inline--fa.fa-w-18 {
+    width: 1.125em; }
+  .svg-inline--fa.fa-w-19 {
+    width: 1.1875em; }
+  .svg-inline--fa.fa-w-20 {
+    width: 1.25em; }
+  .svg-inline--fa.fa-pull-left {
+    margin-right: .3em;
+    width: auto; }
+  .svg-inline--fa.fa-pull-right {
+    margin-left: .3em;
+    width: auto; }
+  .svg-inline--fa.fa-border {
+    height: 1.5em; }
+  .svg-inline--fa.fa-li {
+    width: 2em; }
+  .svg-inline--fa.fa-fw {
+    width: 1.25em; }
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -.125em;
+  width: 1em; }
+  .fa-layers svg.svg-inline--fa {
+    -webkit-transform-origin: center center;
+            transform-origin: center center; }
+
+.fa-layers-text, .fa-layers-counter {
+  display: inline-block;
+  position: absolute;
+  text-align: center; }
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center; }
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: .25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right; }
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right; }
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left; }
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right; }
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left; }
+
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em; }
+
+.fa-xs {
+  font-size: .75em; }
+
+.fa-sm {
+  font-size: .875em; }
+
+.fa-1x {
+  font-size: 1em; }
+
+.fa-2x {
+  font-size: 2em; }
+
+.fa-3x {
+  font-size: 3em; }
+
+.fa-4x {
+  font-size: 4em; }
+
+.fa-5x {
+  font-size: 5em; }
+
+.fa-6x {
+  font-size: 6em; }
+
+.fa-7x {
+  font-size: 7em; }
+
+.fa-8x {
+  font-size: 8em; }
+
+.fa-9x {
+  font-size: 9em; }
+
+.fa-10x {
+  font-size: 10em; }
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em; }
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0; }
+  .fa-ul > li {
+    position: relative; }
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit; }
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+  padding: .2em .25em .15em; }
+
+.fa-pull-left {
+  float: left; }
+
+.fa-pull-right {
+  float: right; }
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: .3em; }
+
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: .3em; }
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear; }
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg); }
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1); }
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1); }
+
+.fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1); }
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  -webkit-filter: none;
+          filter: none; }
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2em; }
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1em; }
+
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2em; }
+
+.fa-inverse {
+  color: #fff; }
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+</style><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,500" rel="stylesheet"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""><script type="text/javascript" src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"></script><script type="text/javascript">!function(e,p){if(!p.__SV){var o,r,t=window;try{var n,i,a,c=t.location,l=c.hash;n=function(e,t){return(i=e.match(RegExp(t+"=([^&]*)")))?i[1]:null},l&&n(l,"state")&&("mpeditor"===(a=JSON.parse(decodeURIComponent(n(l,"state")))).action&&(t.sessionStorage.setItem("_mpcehash",l),history.replaceState(a.desiredHash||"",e.title,c.pathname+c.search)))}catch(e){}(window.mixpanel=p)._i=[],p.init=function(e,t,n){function i(e,t){var n=t.split(".");2==n.length&&(e=e[n[0]],t=n[1]),e[t]=function(){e.push([t].concat(Array.prototype.slice.call(arguments,0)))}}var a=p;for(void 0!==n?a=p[n]=[]:n="mixpanel",a.people=a.people||[],a.toString=function(e){var t="mixpanel";return"mixpanel"!==n&&(t+="."+n),e||(t+=" (stub)"),t},a.people.toString=function(){return a.toString(1)+".people (stub)"},o="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" "),r=0;r<o.length;r++)i(a,o[r]);p._i.push([e,t,n])},p.__SV=1.2,(t=e.createElement("script")).type="text/javascript",t.async=!0,t.src="undefined"!=typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",(n=e.getElementsByTagName("script")[0]).parentNode.insertBefore(t,n)}}(document,window.mixpanel||[]),mixpanel.init("a8b1627edd31155c355fb98e8096886a")</script><title>Arcadian Labs</title><style type="text/css">:root {
+  --dark-blue: #2d2e3f;
+  --dark-blue-darker: #262735;
+  --dark-blue-ligher: #333448;
+  --gold: #d59a3d;
+  --gold-darker: #bf8529;
+  --gold-lighter: #dcab5e;
+  --off-white: #f7f0f5;
+  --off-white-darker: #e7e7e7;
+  --beige: #decbb7;
+  --grey: #8f857d;
+  --brand-primary: var(--gold);
+  --brand-secondary: var(--dark-blue);
+  /* Minor Third */
+  --font-size-0: 15px;
+  --font-size-1: calc(var(--font-size-0) * 1.2);
+  --font-size-2: calc(var(--font-size-1) * 1.2);
+  --font-size-3: calc(var(--font-size-2) * 1.2);
+  --font-size-4: calc(var(--font-size-3) * 1.2);
+  --font-size-5: calc(var(--font-size-4) * 1.2);
+  --font-size-6: calc(var(--font-size-5) * 1.2);
+  --font-size-neg1: calc(var(--font-size-0) / 1.2); }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: var(--off-white);
+  color: var(--dark-blue);
+  text-align: center;
+  line-height: 1.45;
+  font-weight: lighter; }
+
+a {
+  color: var(--dark-blue);
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+html {
+  font-size: var(--font-size-0); }
+
+p {
+  margin-bottom: 1.3em; }
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2; }
+
+h1 {
+  margin-top: 0;
+  font-size: var(--font-size-4); }
+
+h2 {
+  font-size: var(--font-size-3); }
+
+h3 {
+  font-size: var(--font-size-2); }
+
+h4 {
+  font-size: var(--font-size-1); }
+
+small {
+  font-size: var(--font-size-neg1); }
+</style><style type="text/css">.app {
+  text-align: center; }
+
+.app-intro {
+  font-size: large; }
+</style><style type="text/css">.contact {
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0; }
+
+.contact__container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.contact__card {
+  background-color: white;
+  margin-top: 1.5em; }
+
+.contact__details {
+  padding: 2em; }
+  @media (min-width: 768px) {
+    .contact__details {
+      text-align: left; } }
+
+.contact__details-label {
+  font-weight: bold; }
+
+.contact__details-value {
+  margin: 0; }
+
+.contact__row {
+  display: flex;
+  flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    .contact__row {
+      flex-wrap: nowrap; } }
+
+.contact__map, .contact__details {
+  flex: 1;
+  min-width: 100%; }
+  @media (min-width: 768px) {
+    .contact__map, .contact__details {
+      min-width: auto; } }
+
+.leaflet-container {
+  height: 20em;
+  overflow: hidden; }
+</style><style type="text/css"></style><style type="text/css">.nav {
+  font-size: large;
+  font-weight: lighter;
+  display: flex; }
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0.25em;
+  flex: 3;
+  display: flex; }
+  @media (min-width: 768px) {
+    .nav__list {
+      margin: 0 1em; } }
+
+.nav__list-item {
+  flex: 1;
+  margin: 0 0.25em;
+  font-size: var(--font-size-1); }
+  @media (min-width: 768px) {
+    .nav__list-item {
+      margin: 0 1em; } }
+
+.nav__list-item-link {
+  color: var(--brand-primary);
+  transition: opacity 0.2s ease;
+  display: inline-block;
+  vertical-align: middle; }
+
+.nav__list-item-link:hover {
+  text-decoration: none;
+  color: var(--gold-darker);
+  /*transform: scale(0.95);*/
+  opacity: 0.8; }
+
+.nav__list.nav__list--social {
+  flex: 1;
+  margin-right: 0; }
+
+.nav__list.nav__list--social > .nav__list-item {
+  margin-left: 0.5em;
+  margin-right: 0.5em; }
+</style><style type="text/css">.footer {
+  background-color: var(--dark-blue);
+  padding: 1.5em 0; }
+  @media (min-width: 768px) {
+    .footer {
+      padding: 3em 0; } }
+
+.footer__container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 1em; }
+  @media (min-width: 768px) {
+    .footer__content {
+      justify-content: space-between; } }
+
+.footer__brand {
+  min-width: 100px;
+  max-width: 200px;
+  flex: 1;
+  margin: 0 0 0.5em 0; }
+  @media (min-width: 768px) {
+    .footer__brand {
+      margin: 0; } }
+
+.footer .nav__list-item-link {
+  color: white; }
+</style><style type="text/css">.header {
+  background-color: var(--dark-blue); }
+
+.header__content {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    .header__content {
+      justify-content: space-between; } }
+
+.header__brand {
+  max-width: 300px;
+  min-width: 200px;
+  flex: 3;
+  margin: 0 0 0.5em 0; }
+  @media (min-width: 768px) {
+    .header__brand {
+      margin: 0; } }
+
+.header__content > .nav {
+  flex: 2; }
+</style><style type="text/css">.hero {
+  padding: 2em;
+  background-color: var(--dark-blue);
+  color: var(--off-white);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+  @media (min-width: 768px) {
+    .hero {
+      padding: 3em 5em; } }
+
+.hero:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7); }
+  @media (min-width: 768px) {
+    .hero:before {
+      background: linear-gradient(90deg, var(--off-white) 0%, rgba(255, 255, 255, 0) 100%);
+      width: 70%; } }
+
+.hero__lead {
+  font-size: var(--font-size-6);
+  font-weight: bold;
+  color: var(--brand-secondary);
+  position: relative;
+  margin: 0.5em 0;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .hero__lead {
+      margin: 1em 0;
+      text-align: left; } }
+
+.hero__container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  /*min-height: 20em;*/
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .hero__container {
+      justify-content: flex-start; } }
+</style><style type="text/css">.team {
+  margin: 1em 0;
+  padding: 1em 0; }
+
+.team__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .team__items {
+      justify-content: flex-start; } }
+
+.team__item {
+  flex: 1;
+  padding: 1em;
+  max-width: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+
+.team__item-title {
+  margin: 1em 0 0.25em 0; }
+
+.team__item-role {
+  margin: 0.25em 0; }
+
+.team__item-illustration {
+  height: 10em;
+  width: 10em;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; }
+
+.team__container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.team__item-social-items {
+  list-style: none;
+  padding: 0;
+  margin: 0.25em 0;
+  font-size: var(--font-size-2); }
+
+.team__item-social-item {
+  display: inline-block;
+  margin: 0 0.25em; }
+
+.team__item-social-link {
+  color: inherit;
+  transition: opacity 0.2s ease; }
+
+.team__item-social-link:hover {
+  opacity: 0.8; }
+</style><style type="text/css">.work {
+  margin: 1em 0;
+  padding: 1em 0; }
+
+.work__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .work__items {
+      flex-wrap: nowrap; } }
+
+.work__item {
+  flex: 1;
+  padding: 1em;
+  min-width: 100%; }
+  @media (min-width: 768px) {
+    .work__item {
+      min-width: auto; } }
+
+.work__container {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.work__card {
+  transition: transform 0.2s ease;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+  padding: 0 0 5px 0;
+  background-color: white;
+  color: var(--dark-blue);
+  overflow: hidden;
+  /*	background-color: var(--dark-blue);
+	color: var(--off-white);*/ }
+
+.work__item-link:hover {
+  text-decoration: none; }
+
+.work__item-link:hover > .work__card {
+  transform: scale(1.05); }
+
+.work__card-title {
+  margin: 0.25em 0;
+  font-weight: lighter;
+  font-size: var(--font-size-0); }
+
+.work__card-illustration {
+  width: 100%;
+  height: auto; }
+</style></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="app" data-reactroot=""><header class="header"><div class="header__content"><h1 class="header__brand"><a href="/" class="header__brand-link"><div class="logo"><img src="/static/media/logo-gold.05f1b6fc.svg" class="logo__image"></div></a></h1><nav class="nav"><ul class="nav__list"><li class="nav__list-item"><a class="nav__list-item-link" href="#team">Team</a></li><li class="nav__list-item"><a class="nav__list-item-link" href="#work">Work</a></li><li class="nav__list-item"><a class="nav__list-item-link" href="#contact">Contact</a></li></ul><ul class="nav__list nav__list--social"><li class="nav__list-item"><a class="nav__list-item-link" href="https://www.facebook.com/arcadianlabs/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"></path></svg></a></li><li class="nav__list-item"><a class="nav__list-item-link" href="https://www.linkedin.com/company/arcadian-labs/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a></li><li class="nav__list-item"><a class="nav__list-item-link" href="https://github.com/arcadianlabs" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></li><li class="nav__list-item"><a class="nav__list-item-link" href="https://twitter.com/ArcadianLabs" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></li></ul></nav></div></header><section class="hero" style="background-image:url(/static/media/hero-illustration-1.5b9bdb06.jpg)"><div class="hero__container"><p class="hero__lead">Complete,<br>full stack<br>web solutions</p></div></section><section class="work" id="work"><div class="work__container"><h2 class="work__title">Work</h2><ul class="work__items"><li class="work__item"><a class="work__item-link" href="https://giftcoin.org" target="_blank" rel="noopener noreferrer"><div class="work__card"><img class="work__card-illustration" src="/static/media/giftcoin.8c30e14a.png" alt="giftcoin.org"><h3 class="work__card-title">giftcoin.org</h3></div></a></li><li class="work__item"><a class="work__item-link" href="https://auctionclub.com" target="_blank" rel="noopener noreferrer"><div class="work__card"><img class="work__card-illustration" src="/static/media/auctionclub.71be1e87.png" alt="auctionclub.com"><h3 class="work__card-title">auctionclub.com</h3></div></a></li><li class="work__item"><a class="work__item-link" href="https://consciouslife.com" target="_blank" rel="noopener noreferrer"><div class="work__card"><img class="work__card-illustration" src="/static/media/consciouslife.7c601286.png" alt="consciouslife.com"><h3 class="work__card-title">consciouslife.com</h3></div></a></li></ul></div></section><section class="team" id="team"><div class="team__container"><h2 class="team__title">Team</h2><ul class="team__items"><li class="team__item"><div class="team__item-illustration" style="background-image:url(/static/media/andrew-carpenter.ac4d8878.jpg)"></div><h3 class="team__item-title">Andrew Carpenter</h3><p class="team__item-role">Founder &amp; Engineering Lead</p><ul class="team__item-social-items"><li class="team__item-social-item"><a class="team__item-social-link" href="https://www.facebook.com/ajcarpenter" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"></path></svg></a></li><li class="team__item-social-item"><a class="team__item-social-link" href="https://www.linkedin.com/in/andrew-carpenter-24450b14/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a></li></ul></li></ul></div></section><section class="contact" id="contact"><div class="contact__container"><h2 class="contact__title">Contact</h2><div class="contact__card"><div class="contact__row"><div class="contact__details"><label class="contact__details-label">Email</label><p class="contact__details-value"><a href="mailto:contact@arcadianlabs.com">contact@arcadianlabs.com</a></p></div><div class="contact__map"><div></div></div></div></div></div></section><footer class="footer"><div class="footer__container"><div class="footer__content"><div class="footer__brand"><div class="logo"><img src="/static/media/logo-white.5bfa3b57.svg" class="logo__image"></div></div><nav class="nav"><ul class="nav__list"><li class="nav__list-item"><a class="nav__list-item-link" href="#team">Team</a></li><li class="nav__list-item"><a class="nav__list-item-link" href="#work">Work</a></li><li class="nav__list-item"><a class="nav__list-item-link" href="#contact">Contact</a></li></ul><ul class="nav__list nav__list--social"><li class="nav__list-item"><a class="nav__list-item-link" href="https://www.facebook.com/arcadianlabs/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" data-prefix="fab" data-icon="facebook" class="svg-inline--fa fa-facebook fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"></path></svg></a></li><li class="nav__list-item"><a class="nav__list-item-link" href="https://www.linkedin.com/company/arcadian-labs/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a></li><li class="nav__list-item"><a class="nav__list-item-link" href="https://github.com/arcadianlabs" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></li><li class="nav__list-item"><a class="nav__list-item-link" href="https://twitter.com/ArcadianLabs" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></li></ul></nav></div></div></footer></div></div><script type="text/javascript" src="/static/js/main.d0e2bebd.js"></script></body></html>
