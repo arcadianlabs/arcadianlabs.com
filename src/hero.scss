@@ -1,5 +1,19 @@
 @import "./mixins/index.scss";
 
+@include keyframe(pullin) {
+	0% {
+		opacity: 0;
+		letter-spacing: 10px;
+		transform: translate(-100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		letter-spacing: normal;
+		transform: translate(0, 0);
+	}
+}
+
 .hero {
 	padding: 2em;
 	background-color: var(--dark-blue);
@@ -38,6 +52,8 @@
 	position: relative;
 	margin: 0.5em 0;
 	text-align: center;
+
+	@include animation(1s, 2s, pullin);
 
 	@include tablet {
 		margin: 1em 0;
