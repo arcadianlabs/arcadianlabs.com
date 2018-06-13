@@ -1,4 +1,5 @@
 import AndrewCarpenterImg from '../images/team/andrew-carpenter.jpg';
+import SimonRupniakImg from '../images/team/simon-rupniak.jpg';
 
 export default [
 	{ 
@@ -14,6 +15,20 @@ export default [
 		social: {
 			facebook: "https://www.facebook.com/ajcarpenter",
 			linkedin: "https://www.linkedin.com/in/andrew-carpenter-24450b14/",
+		}
+	},
+	{ 
+		name: "Simon Rupniak",
+		role: "Digital Experience Designer",
+		image: SimonRupniakImg,
+		thumbnailCrop: {
+			x: 0,
+			y: 0,
+			width: 100,
+			height: 100,
+		},
+		social: {
+			linkedin: "https://www.linkedin.com/in/simon-rupniak-200b584b/",
 		}
 	},
 ]
