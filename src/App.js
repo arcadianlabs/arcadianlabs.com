@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Helmet from 'react-helmet';
+import Helmet from "react-helmet";
 
 import "./app.scss";
 
@@ -19,14 +19,18 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Helmet 
-          title="Arcadian Labs" 
-        >
-          <meta property="og:url"                content="https://arcadianlabs.com" />
-          <meta property="og:type"               content="website" />
-          <meta property="og:title"              content="Arcadian Labs" />
-          <meta property="og:description"        content="Complete, Full Stack Web Solutions in Brighton, UK" />
-          <meta property="og:image"              content={ heroImage } />
+        <Helmet title="Arcadian Labs">
+          <meta property="og:url" content="https://arcadianlabs.com" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Arcadian Labs" />
+          <meta
+            property="og:description"
+            content="Complete, Full Stack Web Solutions in Brighton, UK"
+          />
+          <meta
+            property="og:image"
+            content={`https://arcadianlabs.com${heroImage}`}
+          />
         </Helmet>
         <Header />
         <Hero image={heroImage} />
