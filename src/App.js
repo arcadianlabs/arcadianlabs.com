@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <div className="app">
         <Helmet 
-          title="You Are Doing Great" 
+          title="Arcadian Labs" 
         >
           <meta property="og:url"                content="https://arcadianlabs.com" />
           <meta property="og:type"               content="website" />
